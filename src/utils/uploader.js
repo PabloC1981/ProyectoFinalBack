@@ -1,4 +1,5 @@
 import multer from 'multer';
+import { __dirname } from './utils.js';
 import multerS3 from 'multer-s3';
 import aws from 'aws-sdk';
 import config from '../config/config.js'
@@ -21,7 +22,7 @@ import config from '../config/config.js'
 export const uploader = multer({
     storage:multer.diskStorage({
         destination:(req,file,cb)=>{
-            cb(null,'src/public')
+            cb(null,__dirname+'./public')
         },
         filename:(req,file,cb)=>{
             cb(null,Date.now()+file.originalname);
