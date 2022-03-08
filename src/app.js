@@ -10,7 +10,7 @@ const server = app.listen(PORT,()=>console.log(`Listening on ${PORT}`));
 
 
 app.use(express.json());
-app.use(express.static(__dirname+'../public'));
+app.use(express.static(__dirname+'/public'));
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser());
 initializePassport();
