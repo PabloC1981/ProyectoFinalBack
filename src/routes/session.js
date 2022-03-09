@@ -1,6 +1,6 @@
 import express from 'express';
 import { passportCall,checkAuthorization } from '../utils/middlewares.js';
-import { uploader } from '../utils/uploader.js';
+import  uploader  from '../utils/uploader.js';
 import jwt from 'jsonwebtoken';
 import config from '../config/config.js';
 

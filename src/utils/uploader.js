@@ -19,13 +19,24 @@ import config from '../config/config.js'
 //             cb(null,Date.now().toString()+file.originalname)
 //         }
 //     })
-export const uploader = multer({
-    storage:multer.diskStorage({
-        destination:(req,file,cb)=>{
-            cb(null,__dirname+'')
-        },
-        filename:(req,file,cb)=>{
-            cb(null,Date.now()+file.originalname);
-        }
-    })
-})
+// export const uploader = multer({
+//     storage:multer.diskStorage({
+//         destination:(req,file,cb)=>{
+//             cb(null,__dirname+'')
+//         },
+//         filename:(req,file,cb)=>{
+//             cb(null,Date.now()+file.originalname);
+//         }
+//     })
+// })
+const storage = multer.diskStorage({
+    destination: function(req,file,cb){
+        cb(null,__dirname+'')
+    },
+    filename:function(req, file, cb){
+        cb(null, Date.now()+file.originalname)
+    }
+});
+const upload = multer({storage:storage});
+
+export default upload;
