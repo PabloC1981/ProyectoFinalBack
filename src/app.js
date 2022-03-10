@@ -3,6 +3,8 @@ import passport from 'passport';
 import initializePassport from './config/passport-config.js';
 import sessionRouter from  './routes/session.js';
 import usersRouter from './routes/users.js';
+import productRouter from './routes/products.js'
+import cartRouter from './routes/carts.js'
 import cookieParser from 'cookie-parser';
 import { __dirname } from './utils/utils.js';
 const app = express();
@@ -19,3 +21,5 @@ app.use(passport.initialize());
 
 app.use('/session',sessionRouter)
 app.use('/api/users',usersRouter)
+app.use('/api/product',productRouter)
+app.use('/api/cart',cartRouter)
