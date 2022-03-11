@@ -48,6 +48,20 @@ export default class Dao{
         let result = await this.models[entity].findByIdAndUpdate(id,{$set:document},{new:true})
         return result.toObject();
     }
+    updateCart = async(document,entity)=>{
+        if(!this.models[entity]) throw new Error(`Entity ${entity} not in dao schemas`)
+        let id = document._id;
+        let result = await this.models[entity].findByIdAndUpdate(id,{$push:{products:document.products}})
+        return result.toObject();
+    }
+    
+    
+    addCart = async(document,entity)=>{
+        if(!this.models[entity]) throw new Error(`Entity ${entity} not in dao schemas`)
+        let id = document._id;
+        let result = await this.models[entity].findByIdAndUpdate(id,{$push:{carts:document.carts}})
+        return result.toObject();
+    }
     delete = async(id,entity)=>{
         if(!this.models[entity]) throw new Error(`Entity ${entity} not in dao schemas`)
         let result = await this.models[entity].findByIdAndDelete(id);
