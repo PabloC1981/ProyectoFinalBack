@@ -31,15 +31,11 @@ app.use('/api/cart',cartRouter)
 
 // /*renderizo front! */
 app.get('/login',(req,res)=>{
-    res.sendFile(__dirname+'/public/pages/login.html')
+    res.sendFile(__dirname+'/public/page/login.html')
 })
 
 app.get('/register',(req,res)=>{
-    res.sendFile(__dirname+'/public/pages/register.html')
-})
-
-app.get('/view/cart',(req,res)=>{
-    res.sendFile(__dirname+'/public/pages/cart.html')
+    res.sendFile(__dirname+'/public/page/register.html')
 })
 
 

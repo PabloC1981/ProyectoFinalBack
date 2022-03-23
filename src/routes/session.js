@@ -11,6 +11,7 @@ router.get('/current',passportCall('jwt'),checkAuthorization(["ADMIN","USER"]),(
     res.send(user);
 })
 router.post('/register',uploader.single('avatar'),passportCall('register'),(req,res)=>{
+    let file = req.file
     res.send({message:"Signed up"})
 })
 router.post('/login',passportCall('login'),(req,res)=>{
