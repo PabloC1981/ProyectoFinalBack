@@ -22,3 +22,21 @@
 {"level":"warn","message":"Endpoint invalido"}
 {"level":"info","message":"GET at /favicon.ico"}
 {"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /favicon.ico"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /index.html"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /src"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /src/public/index.html"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /__dirname"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /__dirname"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /__dirname"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /__dirname"}
+{"level":"warn","message":"Endpoint invalido"}

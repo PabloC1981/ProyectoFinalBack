@@ -30,6 +30,10 @@ app.use('/api/cart',cartRouter)
 
 
 // /*renderizo front! */
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname+'/index.html')
+})
+
 app.get('/login',(req,res)=>{
     res.sendFile(__dirname+'/public/page/login.html')
 })
