@@ -40,3 +40,15 @@
 {"level":"warn","message":"Endpoint invalido"}
 {"level":"info","message":"GET at /__dirname"}
 {"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /users"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"OPTIONS at /users"}
+{"level":"info","message":"GET at /newuser"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /favicon.ico"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"OPTIONS at /users"}
+{"level":"info","message":"POST at /users"}
+{"level":"info","message":"POST at /users"}
+{"level":"info","message":"POST at /users"}
+{"level":"info","message":"POST at /users"}

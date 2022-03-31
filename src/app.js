@@ -9,12 +9,18 @@ import cookieParser from 'cookie-parser';
 import { __dirname } from './utils/utils.js';
 import { createLogger } from './utils/utils.js';
 import config from './config/config.js';
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT||8080;
 const server = app.listen(PORT,()=>console.log(`Listening on ${PORT}`));
 const logger = createLogger(config.env.NODE_ENV)
+const corsOptions ={
+    origin:'http://localhost:3000',
+    optionSuccessStatus:200
+}
 
+app.use(cors(corsOptions))
 app.use(express.json());
 app.use(express.static(__dirname+'/public'));
 app.use(express.urlencoded({extended:true}))
