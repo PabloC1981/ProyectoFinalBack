@@ -40,3 +40,33 @@
 {"level":"warn","message":"Endpoint invalido"}
 {"level":"info","message":"GET at /__dirname"}
 {"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /testget"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /users"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /users"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /users"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /users"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"GET at /users"}
+{"level":"warn","message":"Endpoint invalido"}
+{"level":"info","message":"POST at /api/users/"}
+{"level":"info","message":"POST at /api/users/"}

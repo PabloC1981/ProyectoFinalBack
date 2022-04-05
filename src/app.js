@@ -27,6 +27,10 @@ app.use('/api/users',usersRouter)
 app.use('/api/product',productRouter)
 app.use('/api/cart',cartRouter)
 
+//PARA TEST//
+app.get('/test',(req,res)=>{
+    res.send("Test")
+})
 
 
 // /*renderizo front! */
