@@ -70,3 +70,4 @@
 {"level":"warn","message":"Endpoint invalido"}
 {"level":"info","message":"POST at /api/users/"}
 {"level":"info","message":"POST at /api/users/"}
+{"level":"info","message":"POST at /api/users/"}
